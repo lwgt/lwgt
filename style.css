@@ -2,10 +2,12 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-.inhalt h1 {
-    font-size: 70px; /* Diese Regel würde die Inline-Style-Regel überschreiben */
+div.inhalt li {
+    margin-left: 41%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: left;
 }
-body {
-    background-color: #f0f0f0; /* Hier kannst du die gewünschte Farbe einfügen */
-    font-family: Arial, sans-serif;
+html {
+    background-color: rgb(197, 236, 236);
 }
