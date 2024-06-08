@@ -1,0 +1,11 @@
+.inhalt {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.inhalt h1 {
+    font-size: 70px; /* Diese Regel würde die Inline-Style-Regel überschreiben */
+}
+body {
+    background-color: #f0f0f0; /* Hier kannst du die gewünschte Farbe einfügen */
+    font-family: Arial, sans-serif;
+}
