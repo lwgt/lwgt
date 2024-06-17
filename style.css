@@ -1,4 +1,4 @@
-.inhalt {
+/* .inhalt {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -10,4 +10,40 @@ div.inhalt li {
 }
 html {
     background-color: rgb(197, 236, 236);
+}
+.inhalt p {
+    font-size: 23px;
+}
+.inhalt h1 {
+    font-size: 40px;
+}
+.inhalt p a {
+    direction: none;
+}*/ 
+
+html {
+    background-color: rgb(197, 236, 236);
+}
+
+.inhalt {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.inhalt h1 {
+    font-size: 40px;
+}
+
+.inhalt p {
+    font-size: 23px;
+}
+
+.inhalt p a {
+    text-decoration: none;
+}
+
+div.inhalt li {
+    margin-left: 41%;
+    font-size: 17px;
+    text-align: left;
 }
