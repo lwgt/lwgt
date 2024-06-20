@@ -36,6 +36,7 @@ html {
 
 .inhalt p {
     font-size: 23px;
+    padding: auto;
 }
 
 .inhalt p a {
