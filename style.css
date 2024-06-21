@@ -48,3 +48,17 @@ div.inhalt li {
     font-size: 17px;
     text-align: left;
 }
+div.schwarz {
+    background-color: black;
+    color: white;
+}
+/*.inhalt img {
+    height: auto;
+    width: 50%;
+}*/ 
+p {
+    font-size: 32px;
+}
+.link p {
+    font-size: 32px;
+}
