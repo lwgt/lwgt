@@ -1,26 +1,3 @@
-/* .inhalt {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-div.inhalt li {
-    margin-left: 41%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    text-align: left;
-}
-html {
-    background-color: rgb(197, 236, 236);
-}
-.inhalt p {
-    font-size: 23px;
-}
-.inhalt h1 {
-    font-size: 40px;
-}
-.inhalt p a {
-    direction: none;
-}*/ 
-
 html {
     background-color: rgb(197, 236, 236);
 }
@@ -42,23 +19,22 @@ html {
 .inhalt p a {
     text-decoration: none;
 }
+.inhalt a {
+    text-decoration: none;
+}
 
 div.inhalt li {
     margin-left: 41%;
-    font-size: 17px;
+    font-size: 23px;
     text-align: left;
 }
+
 div.schwarz {
     background-color: black;
     color: white;
 }
-/*.inhalt img {
-    height: auto;
-    width: 50%;
-}*/ 
-p {
+
+/*.links p {
     font-size: 32px;
-}
-.link p {
-    font-size: 32px;
-}
+}*/
+
