@@ -103,8 +103,18 @@ div.schwarz {
       opacity: 0;
       transition: opacity 0.2s ease;
     }
-
+    .nav-item:visited {
+      color: #0d8d8d !important;
+    }
     .nav:hover .nav-item span {
       opacity: 1;
+    }
+    .specialbilder {
+      width: 50%;
+      height: auto;
+    }
+    .specialbilderheight {
+      height: 20%;
+      width: 50%;
     }
   
