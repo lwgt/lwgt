@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui;
+    }
+
+    .nav {
+      position: fixed;
+      height: 100vh;
+      background: #1a1a1a;
+      width: 60px;
+      transition: width 0.3s ease;
+      overflow: hidden;
+    }
+
+    .nav:hover {
+      width: 200px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .nav-item:hover {
+      background: #333;
+    }
+
+    .nav-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+    }
+
+    .nav-item span {
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav:hover .nav-item span {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#" class="nav-item">
+      <img src="/api/placeholder/24/24" alt="Home">
+      <span>Home</span>
+    </a>
+    <a href="#" class="nav-item">
+      <img src="/api/placeholder/24/24" alt="Profile">
+      <span>Profile</span>
+    </a>
+    <a href="#" class="nav-item">
+      <img src="/api/placeholder/24/24" alt="Settings">
+      <span>Settings</span>
+    </a>
+  </nav>
+
+  <div style="margin-left: 80px; padding: 20px;">
+    <h1>Main Content</h1>
+    <p>Click the arrow at the bottom of the sidebar to expand/collapse.</p>
+  </div>
+</body>
+</html>
