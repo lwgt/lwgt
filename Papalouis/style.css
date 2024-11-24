@@ -1,0 +1,68 @@
+.inhalt {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: system-ui;
+  }
+
+  .nav {
+    position: fixed;
+    height: 100vh;
+    background: #1a1a1a;
+    width: 60px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+  }
+
+  .nav:hover {
+    width: 200px;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .nav-item:hover {
+    background: #333;
+  }
+
+  .nav-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+
+  .nav-item span {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav:hover .nav-item span {
+    opacity: 1;
+  }
