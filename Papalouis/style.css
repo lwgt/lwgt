@@ -49,6 +49,7 @@
 
   .nav-item:hover {
     background: #333;
+    text-decoration: underline;
   }
   .nav-item img {
     width: 48px;
@@ -59,7 +60,7 @@
   .nav-item span {
     white-space: nowrap;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.1s ease;
   }
 
   .nav:hover .nav-item span {
