@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation per Klick (Div)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .inhalt {
+            padding: 80px;
+            margin-left: 90px;
+        }
+
+        .nav {
+            position: fixed;
+            height: 100vh;
+            background: #1a1a1a;
+            width: 90px;
+            transition: width 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Wenn die Checkbox aktiviert ist, erweitere die Navigation */
+        #nav-toggle:checked ~ .nav {
+            width: 200px;
+        }
+
+        /* Verschiebe den Inhalt nach rechts, wenn die Navigation geöffnet wird */
+        #nav-toggle:checked ~ .inhalt {
+            margin-left: 200px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav-item:hover {
+            background: #333;
+            text-decoration: underline;
+        }
+
+        .nav-item img {
+            width: 48px;
+            height: 48px;
+            margin-right: 15px;
+        }
+
+        .nav-item span {
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Zeige Text an, wenn Navigation geöffnet ist */
+        #nav-toggle:checked ~ .nav .nav-item span {
+            opacity: 1;
+        }
+
+        /* Verstecke die Checkbox */
+        #nav-toggle {
+            display: none;
+        }
+
+        /* Das div dient als klickbarer Bereich */
+        .clickable-div {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #333;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .clickable-div:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Versteckte Checkbox für den Toggle -->
+    <input type="checkbox" id="nav-toggle">
+
+    <!-- Div, das als Klick-Button fungiert und die Checkbox aktiviert/deaktiviert -->
+    <div class="clickable-div">
+        ☰
+    </div>
+
+    <div class="nav">
+        <a class="nav-item" href="#">
+            <img src="icon1.png" alt="Icon 1">
+            <span>Home</span>
+        </a>
+        <a class="nav-item" href="#">
+            <img src="icon2.png" alt="Icon 2">
+            <span>About</span>
+        </a>
+        <a class="nav-item" href="#">
+            <img src="icon3.png" alt="Icon 3">
+            <span>Contact</span>
+        </a>
+    </div>
+    <div class="inhalt">
+        <h1>Willkommen</h1>
+        <p>Inhalt hier einfügen...</p>
+    </div>
+
+</body>
+</html>
