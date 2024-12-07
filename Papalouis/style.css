@@ -6,10 +6,20 @@
 .Titelretzept {
   font-size: 20px;
 }
+.mdl-layout {
+  display: flex;
+}
 
 
-
-
+.flex {
+  display: flex;
+}
+.mdl-layout__header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Damit der Header über anderen Elementen bleibt */
+}
 
 
 
