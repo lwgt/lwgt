@@ -31,6 +31,7 @@ html {
 }
 .inhalt a {
     text-decoration: none;
+    text-align: center;
 }
 
 div.inhalt li {
