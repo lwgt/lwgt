@@ -1,35 +1,5 @@
-<!-- Dies ist ein Kommentar im Div-Tag ssssss<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>404</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .inhalt {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    }
-    .inhalt h1 {
-    font-size: 70px; /* Diese Regel würde die Inline-Style-Regel überschreiben  LV */
-    }
-    html {
-    background-color: #f0f0f0; 
-    font-family: Arial, sans-serif;
-    }
-
-    </style>
-</head>
-<body>
-    <div class="inhalt">
-        <h1>404 Error</h1>
-        <h1 style="font-size: 20px;">¯\_(ツ)_/¯</h1>
-    </div>
-</body>
-</html>
--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,36 +36,62 @@
     </style>
 </head>
 <body>
-    <p>Um auf meine Seite zu kommen erwarte ich ein Passwort. Dieses Passwort bekommst du von mir, wenn du mich fragst...</p>
+    <p>Um auf meine Seite zu kommen, erwarte ich ein Passwort. Dieses Passwort bekommst du von mir, wenn du mich fragst...</p>
     <form id="passwordForm">
         <label for="password">Gib das Passwort ein:</label><br>
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" id="password" type="text" type="password" name="password" required id="user" pattern="[A-Z,a-z, ]*">
-            <label class="mdl-textfield__label" for="user">Passwort</label>
+            <input class="mdl-textfield__input" id="password" type="password" name="password" required pattern="[A-Za-z ]*">
+            <label class="mdl-textfield__label" for="password">Passwort</label>
             <span class="mdl-textfield__error">Bitte nur Buchstaben benutzen</span>
-          </div>
+        </div>
         <button type="button" onclick="checkPassword()">Prüfen</button>
         <div id="message"></div>
         <div id="link"></div>
     </form>
 
     <script>
+        let timeout;
+        let timerGestoppt = false; 
+
+        function resetTimer() {
+            if (timerGestoppt) return;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                window.location.href = "sites.html"; 
+            }, 60000); 
+        }
+
+        function stopTimer() {
+            clearTimeout(timeout);
+            timerGestoppt = true;
+            console.log("Timer wurde gestoppt.");
+        }
+            
         function checkPassword() {
             const correctPassword = "iamagoodpassword";
             const userPassword = document.getElementById("password").value;
             const messageElement = document.getElementById("message");
-            const linkElement = document.getElementById("link");
+
             if (userPassword === correctPassword) {
-                messageElement.textContent = "Passwort ist korrekt!";
+                messageElement.textContent = "Passwort korrekt! Weiterleitung...";
                 messageElement.className = "success";
-                linkElement.innerHTML = '<a href="sites.html">Hier geht es zu deiner Seite</a>';
+                stopTimer();  // Stoppt den Timer komplett
+                setTimeout(() => {
+                    window.location.replace("sites.html");
+                }, 1000); 
             } else {
                 messageElement.textContent = "Falsches Passwort.";
                 messageElement.className = "error";
-                linkElement.innerHTML = ''; 
             }
         }
+
+        window.onload = () => {
+            if (!timerGestoppt) resetTimer();
+            document.addEventListener("mousemove", resetTimer);
+            document.addEventListener("keypress", resetTimer);
+            document.addEventListener("click", resetTimer);
+            document.addEventListener("scroll", resetTimer);
+        };
     </script>
 </body>
 </html>
-
