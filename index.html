@@ -18,7 +18,7 @@
             font-weight: bold;
         }
         #message.success {
-            color: green;
+            color: rgb(0, 0, 0);
         }
         #message.error {
             color: red;
@@ -52,7 +52,7 @@
     <script>
         let timeout;
         let timerGestoppt = false; 
-
+    
         function resetTimer() {
             if (timerGestoppt) return;
             clearTimeout(timeout);
@@ -60,31 +60,41 @@
                 window.location.href = "sites.html"; 
             }, 60000); 
         }
-
+    
         function stopTimer() {
             clearTimeout(timeout);
             timerGestoppt = true;
             console.log("Timer wurde gestoppt.");
         }
-            
+    
+        function warteUndWeiter(element) {
+            setTimeout(() => {
+                element.textContent = "";
+            }, 2000); // 2 Sekunden warten
+        }
+    
         function checkPassword() {
             const correctPassword = "iamagoodpassword";
             const userPassword = document.getElementById("password").value;
             const messageElement = document.getElementById("message");
-
+    
             if (userPassword === correctPassword) {
-                messageElement.textContent = "Passwort korrekt! Weiterleitung...";
+                messageElement.textContent = "Bitte warten...";
                 messageElement.className = "success";
-                stopTimer();  // Stoppt den Timer komplett
+                stopTimer();  
+    
+                // 2 Sekunden warten, bevor die Weiterleitung passiert
                 setTimeout(() => {
                     window.location.replace("sites.html");
-                }, 1000); 
+                }, 2000); 
+    
             } else {
                 messageElement.textContent = "Falsches Passwort.";
                 messageElement.className = "error";
+                warteUndWeiter(messageElement); // Nach 2 Sekunden ausblenden
             }
         }
-
+    
         window.onload = () => {
             if (!timerGestoppt) resetTimer();
             document.addEventListener("mousemove", resetTimer);
@@ -93,5 +103,7 @@
             document.addEventListener("scroll", resetTimer);
         };
     </script>
+    
+
 </body>
 </html>
