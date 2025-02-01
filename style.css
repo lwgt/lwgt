@@ -53,7 +53,7 @@ div.schwarz {
 
     * {
       margin: 0;
-      /* padding: 50px; */
+      padding: 0px;
       box-sizing: border-box;
     }
 
@@ -65,7 +65,7 @@ div.schwarz {
       margin-top: -30px;
       position: fixed;
       height: 100vh;
-      background: #d0eeeebb;
+      background: #bbf7f7bb;
       width: 60px;
       transition: width 0.3s ease;
       overflow: hidden;
@@ -81,23 +81,22 @@ div.schwarz {
       display: flex;
       align-items: center;
       padding: 15px;
-      color: rgb(163, 0, 0);
+      color: rgb(0, 0, 0);
       cursor: pointer;
       text-decoration: none;
     }
 
     .nav-item:hover {
         margin-top: 0px;
-      /* background: #333; */
       text-decoration: underline;
-      color: #000;
+      color: #a92727;
     }
 
     .nav-item img {
-        /* margin-top: 0px; */
+
       width: 24px;
       height: 24px;
-      /* margin-right: 15px; */
+      margin-right: 15px;
     }
 
     .nav-item span {
@@ -107,7 +106,7 @@ div.schwarz {
       transition: opacity 0.2s ease;
     }
     .nav-item:visited {
-      color: #000000 !important;
+      color: #9b2323 !important;
     }
     .nav:hover .nav-item span {
       opacity: 1;
