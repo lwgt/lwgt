@@ -40,9 +40,9 @@
     <form id="passwordForm">
         <label for="password">Gib das Passwort ein:</label><br>
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" id="password" type="password" name="password" required pattern="[A-Za-z ]*">
+            <input class="mdl-textfield__input" id="password" type="password" name="password">
             <label class="mdl-textfield__label" for="password">Passwort</label>
-            <span class="mdl-textfield__error">Bitte nur Buchstaben benutzen</span>
+            <!-- <span class="mdl-textfield__error">Bitte nur Buchstaben benutzen</span> -->
         </div>
         <button type="button" onclick="checkPassword()">Prüfen</button>
         <div id="message"></div>
