@@ -1,13 +1,23 @@
+/* -----------------------------------------------------Standart-------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+    * {
+      margin: 0;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui;
+    }
 html {
     background-color: #d0eeee;
 
 }
-
+/* --------------------------------------------------Inhalt------------------------------------------------------- */
 .inhalt {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; 
@@ -45,22 +55,7 @@ div.schwarz {
     color: white;
 }
 
-/*.links p {
-    font-size: 32px;
-}*/
-
-
-
-    * {
-      margin: 0;
-      padding: 0px;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: system-ui;
-    }
-
+/* ------------------------------------------------Navigation----------------------------------------------------- */
     .nav {
       margin-top: -30px;
       position: fixed;
@@ -111,6 +106,7 @@ div.schwarz {
     .nav:hover .nav-item span {
       opacity: 1;
     }
+    /* --------------------------------------------------Bilder-------------------------------------------------- */
     .specialbilder {
       width: 50%;
       height: auto;
