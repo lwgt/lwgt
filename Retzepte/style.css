@@ -20,7 +20,12 @@
   width: 100%;
   z-index: 1000; /* Damit der Header über anderen Elementen bleibt */
 }
-
+.mdl-layout-title {
+  color: black;
+}
+.material-icons {
+  color: black;
+}
 
 
 
