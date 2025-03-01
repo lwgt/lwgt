@@ -19,7 +19,7 @@
   .demo-layout-transparent .mdl-layout__drawer-button {
     /* This background is dark, so we set text to white. Use 87% black instead if
        your background is light. */
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .demo-layout-transparent mdl-layout mdl-js-layout {
     position: fixed;
@@ -31,7 +31,7 @@
     position: fixed;
   }
   .mdl-layout__drawer{
-
+    
     position: fixed;
   }
    .mdl-layout__obfuscator{
@@ -40,6 +40,15 @@
   .mdl-layout-title {
     padding: 30px;
   }
+  .material-icons {
+    color: black;
+    margin-right: 1000px ;
+  }
+  .mdl-layout-title :hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   </style>
   
     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
@@ -56,7 +65,9 @@
       </header>
         <div class="mdl-layout__drawer">
           <div class="asdf">  
-          <span class="mdl-layout-title">Home</span>
+          <span onclick="location.reload();" class="mdl-layout-title"><img src="bilder/Menu.png"  width="20px" height="auto">
+
+          </span>
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="index.html">Home</a>
             <a class="mdl-navigation__link" href="html-1.html">Deine Erste Zeile Code</a>
@@ -71,9 +82,7 @@
    <!-- ----------------------------------------------------**Inhalt**-------------------------------------------- -->
     <div class="inhalt">
         <h1>Hallo zusammen</h1>
-        <p>Das ist die Seite in der Kinder von 8 bis 12 Jahren zusammen programmieren lernen :D <br>
-        Dierekt loslegen? <a href="html-1.html">klicke hier! :D</a></p>
-        
+        <p>Das ist die Seite in der Kinder von 8 bis 12 Jahren zusammen programmieren lernen :D</p>
     </div>
 </body>
 </html>

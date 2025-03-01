@@ -43,6 +43,10 @@ html {
     text-decoration: none;
     text-align: center;
 }
+.small {
+  width: 30px;
+  height: auto;
+}
 
 div.inhalt li {
     margin-left: 41%;
@@ -115,4 +119,28 @@ div.schwarz {
       height: 20%;
       width: 50%;
     }
-    
+    /* --------------------------------------------Material-lite-Desing---------------------------------- */
+    .asdf {
+      position: fixed ;
+    }
+    .material-icons {
+      position: fixed;
+    }
+    .mdl-layout__drawer{
+      
+      position: fixed;
+    }
+     .mdl-layout__obfuscator{
+      display: none !important;
+    }
+    .mdl-layout-title {
+      padding: 30px;
+    }
+    .material-icons {
+      color: black;
+      margin-right: 1000px ;
+    }
+    .mdl-layout-title :hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
