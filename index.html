@@ -72,7 +72,7 @@
         function warteUndWeiter(element) {
             setTimeout(() => {
                 element.textContent = "";
-            }, 2000); // 2 Sekunden warten
+            }, 2000);
         }
     
         function checkPassword() {
@@ -85,7 +85,7 @@
                 messageElement.className = "success";
                 stopTimer();  
     
-                // 2 Sekunden warten, bevor die Weiterleitung passiert
+
                 setTimeout(() => {
                     window.location.replace("sites.html");
                 }, 2000); 
@@ -93,7 +93,7 @@
             } else {
                 messageElement.textContent = "Falsches Passwort.";
                 messageElement.className = "error";
-                warteUndWeiter(messageElement); // Nach 2 Sekunden ausblenden
+                warteUndWeiter(messageElement);
             }
         }
     
