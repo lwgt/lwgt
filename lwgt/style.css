@@ -1,0 +1,89 @@
+.sidebar p {
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    padding: 3px;
+}
+
+nav.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #151f3dd8;
+  padding: 20px;
+}
+
+nav.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav.sidebar ul li {
+  margin: 15px 0;
+}
+
+nav.sidebar ul li a {
+    color:rgb(10, 174, 10);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+nav.sidebar ul li a:hover {
+    color:aquamarine !important;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: rgb(230, 255, 255);
+}
+
+
+
+.inhalt  {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 70px;
+}
+.inhalt h1 {
+    font-size: 35px;
+}
+.bigtitle {
+    font-size: 45px;
+}
+.inhalt p {
+    font-size: 25px;
+    text-decoration: none;
+}
+.inhalt a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Topbar */
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .topbartext {
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+  }
+  .topbartext:hover {
+      color: aquamarine;
+  }
