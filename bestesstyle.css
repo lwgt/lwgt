@@ -1,0 +1,21 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+/* --------------------inhalt------------------ */
+.inhalt {
+    text-align: center;
+    padding: 20px;
+}
+.inhalt a {
+    text-decoration: none;
+}
+.inhalt a:hover {
+    color: rgb(0, 255, 140);
+}
+.inhalt h1 {
+    font-size: 35px;
+}
+.inhalt p {
+    font-size: 25px;
+}
