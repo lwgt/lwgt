@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktliste</title>
+    <style>
+        html {
+            background-color: #b5b5b5;
+            font-family: Arial, sans-serif;
+        }
+        .input {
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+            color: #000000;
+        }
+        .button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+          .input-field {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+  }
+    .contact-entry {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #007bff;
+  }
+
+  .contact-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .contact-details {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+    </style>
+</head>
+<body>
+    <input type="text" id="nameInput" placeholder="Name" class="input-field">
+    <input type="text" id="emailInput" placeholder="E - Mail" class="input-field">
+    <input type="text" id="numberInput" placeholder="Telefonnummer" class="input-field">
+    <button onclick="addContact()" id="addContact">Kontakt Hinzufügen</button>
+    <div class="contactList">
+        <h1>Kontaktliste</h1>
+        <ul id="contactList">
+            <!-- Kontakte werden hier hinzugefügt -->
+            
+        </ul>
+
+    </div>
+    <script src="jslernern.js"></script>
+</body>
+</html>
