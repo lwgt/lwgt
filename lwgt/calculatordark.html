@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://lwgt.github.io/lwgt/css.css">
+    <style>
+
+        html {
+            background-color: black;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: orange;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+        input {
+            font-size: 20px;
+        }
+        button {
+            background-color: aqua;
+            color: red;
+            font-size: 20px;
+        }
+        button:hover {
+            background-color: red;
+            color: aquamarine;
+        }
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            width:auto ;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="calculatorwhite.html">Schema Ändern</a>
+    <input type="number" id="firstNumber">
+    <input type="number" id="secondNumber">
+    <button onclick="calculate()">Ausrechnen</button>
+    <p id="ergebnis"></p>
+    <script>
+
+        function calculate() {
+            const firstNumber = parseFloat(document.getElementById("firstNumber").value);
+            const secondNumber = parseFloat(document.getElementById("secondNumber").value);
+            const ergebnis = firstNumber + secondNumber;
+            document.getElementById("ergebnis").innerHTML = ergebnis
+        }
+
+    </script>
+</body>
+</html>

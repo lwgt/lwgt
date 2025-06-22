@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '1' ">1</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '2' ">2</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '3' ">3</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '4' ">4</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '5' ">5</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '6' ">6</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '7' ">7</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '8' ">8</button>
+    <button onclick="document.getElementById(numberIndexer).innerHTML += '9' ">9</button>
+    <button onclick="calculate()">calculate</button>
+
+    <button onclick="numberIndexer = 'number2' ">plus</button>
+    <p id="number1"></p>
+    <p id="number2"></p>
+    <p id="correctNumber"></p>
+
+
+    <script>
+        let numberIndexer = "number1";
+        let correctNumber;
+        let number1;
+        let number2;
+        function calculate() {
+            number1 = parseFloat(document.getElementById("number1").innerHTML.trim());
+            number2 = parseFloat(document.getElementById("number2").innerHTML.trim);
+            console.log(typeof number1)
+            console.log(typeof number2)
+            correctNumber = number1 + number2;
+            console.log(typeof correctNumber)
+            document.getElementById("correctNumber").innerHTML = correctNumber
+
+            }
+
+    </script>
+</body>
+</html>
