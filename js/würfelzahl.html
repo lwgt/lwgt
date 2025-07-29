@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 50px;
+            color: white;
+            background-color: white;
+            border: 5px;
+        }
+        button:hover {
+            background-color: wheat;
+        }
+        button:active {
+            background-color: aquamarine;
+        }
+        h2 {
+            font-size: 100px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="würfeln()" id="würfeln">
+        🎲
+    </button style="font-size: 50px;">
+    <h1 id="zahl"></h1>
+    <h2 id="ergebnis"></h2>
+    <script>
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function würfeln() {
+            let zahl = Math.floor(Math.random() * 6) + 1;
+            if (zahl === 1) {
+                zahl = "1️⃣"
+            }
+
+            if (zahl === 2) {
+                zahl = "2️⃣"
+            }
+
+            if (zahl === 3) {
+                zahl = "3️⃣"
+            }
+
+            if (zahl === 4) {
+                zahl = "4️⃣"
+            }
+
+            if (zahl === 5) {
+                zahl = "5️⃣"
+            }
+
+            if (zahl === 6) {
+                zahl = "6️⃣"
+            }
+            document.getElementById("zahl").innerHTML = "1️⃣";
+            await sleep(100)
+            document.getElementById("zahl").innerHTML = "2️⃣";
+            await sleep(100)
+            document.getElementById("zahl").innerHTML = "3️⃣";
+            await sleep(100)
+            document.getElementById("zahl").innerHTML = "4️⃣";
+            await sleep(100)
+            document.getElementById("zahl").innerHTML = "5️⃣";
+            await sleep(100)
+            document.getElementById("zahl").innerHTML = "6️⃣";
+            await sleep(100)
+            document.getElementById("ergebnis").innerHTML = zahl;
+            await sleep(500)
+            document.getElementById("ergebnis").innerHTML = "";
+
+        }
+
+    </script>
+</body>
+</html>

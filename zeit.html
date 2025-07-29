@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Aktuelle Zeit mit WorldTimeAPI</title>
+</head>
+<body>
+  <h1>Aktuelle Zeit in Berlin:</h1>
+  <p id="zeit">Lade...</p>
+
+  <script>
+    fetch("http://worldtimeapi.org/api/timezone/Europe/Berlin")
+      .then(response => response.json())
+      .then(data => {
+        const zeit = new Date(data.datetime);
+        document.getElementById("zeit").innerText = zeit.toLocaleString("de-DE");
+      })
+      .catch(error => {
+        console.error("Fehler:", error);
+        document.getElementById("zeit").innerText = "Zeit konnte nicht geladen werden.";
+      });
+  </script>
+</body>
+</html>

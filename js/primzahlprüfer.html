@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimzahlChecker</title>
+</head>
+<body>
+    <input id="numberInput" type="text">
+    <button onclick="checkNumber()" id="checkBtn">PrimZahl</button>
+    <script>
+
+        function isFloat(n) {
+        return typeof n === 'number' && !Number.isNaN(n) && !Number.isInteger(n);
+            }
+
+
+
+        function checkNumber() { let isPrim = false
+            let numberInput = document.getElementById("numberInput")
+            let calInput = numberInput;
+            calInput = calInput -= 1
+            while (isPrim === false) {
+                if (isFloat(numberInput /= calInput)) {
+                    alert("Ist ne Primzahl")
+                    isPrim = true;
+                }
+                else {
+                    calInput--;
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
