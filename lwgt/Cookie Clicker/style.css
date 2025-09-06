@@ -1,0 +1,29 @@
+html, body {
+    height: 100%; /* wichtig für vertikale Zentrierung */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    background: #f0f0f0;
+}
+
+img {
+    width: 200px; /* optional: Größe anpassen */
+}
+img:active {
+    width: 300px;
+    height: auto;
+}
+.cookie-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#currentCookies {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
