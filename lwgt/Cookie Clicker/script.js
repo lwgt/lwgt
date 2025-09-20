@@ -1,3 +1,4 @@
+document.getElementById("currentCookies").innerHTML = "Clicke auf das Cookie🍪 um Kekse zu bekommen"
 let plusCookies = 1
 let Points = 0
 let cookieText = "🍪Cookies🍪" + Points
@@ -16,6 +17,7 @@ function buy(Article) {
         if (Points > 100) {
             plusCookies += 1;
             Points -= 100;
+            document.getElementById("currentCookies").innerHTML = "🍪Cookies🍪" + Points;
         }
         else {
             document.getElementById("Error").innerHTML = "Du hast nicht genügend Cookies";
