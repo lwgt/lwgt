@@ -1,0 +1,56 @@
+.inhalt {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+
+.inhalt #vrpet {
+    color: rgb(221, 174, 5);
+    font-size: 50px;
+}
+
+.inhalt #play {
+    transition: all 250ms;
+    font-size: 25px;
+    background-color: rgb(255, 214, 80);
+    border: 10px;
+}
+.inhalt #small {
+    font-size: 10px;
+}
+
+.inhalt #play:hover {
+    font-size: 30px;
+    background-color: coral;
+    border: 10px;
+}
+
+.inhalt #play:active {
+    transition: all 0ms;
+    font-size: 25px;
+    background-color: rgb(112, 255, 80);
+    border: 10px;
+}
+
+
+.inhalt .katze {
+    width: 5%;
+    height: auto;
+}
+
+.inhalt .hase {
+    width: 5%;
+    height: auto;
+}
+
+.inhalt .welpe {
+    width: 5%;
+    height: auto;
+}
+
+.inhalt .meerschweinchen {
+    width: 5%;
+    height: auto;
+}

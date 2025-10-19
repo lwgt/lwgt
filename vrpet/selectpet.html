@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierauswal</title>
+    <link rel="stylesheet" href="https://lwgt.github.io/lwgt/css.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .inhalt .katze {
+    width: 10%;
+    height: auto;
+}
+
+.inhalt .hase {
+    width: 10%;
+    height: auto;
+}
+
+.inhalt .welpe {
+    width: 10%;
+    height: auto;
+}
+
+.inhalt .meerschweinchen {
+    width: 10%;
+    height: auto;
+}
+.inhalt button {
+    transition: all 250ms;
+    margin: 10px;
+    background-color: wheat ;
+    border: 0;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.inhalt button:hover {
+    margin: 10px;
+    background-color: aquamarine ;
+    border: 0;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="inhalt">
+
+        <h1>Tierauswal</h1>
+        <p>Bitte wähle eines dieser Tiere aus. <br>
+        </p>
+        <p id="small">(Man kann später auch neue Tiere kaufen) <br> </p>
+        
+        <img class="katze" src="Katze.png" alt="">
+        <br>
+        <button onclick="selectpet('Katze')">Katze</button>
+        <br>
+        <img class="meerschweinchen" src="Meerschweinchen.png" alt="">
+        <br>
+        <button onclick="selectpet('Meerschweinchen')">Meerschweinchen</button>
+        <br>
+        <img class="welpe" src="Welpe.png" alt="">
+        <br>
+        <button onclick="selectpet('Katze')">Welpe</button>
+        <br>
+        <img class="hase" src="Hase.png" alt="">
+        <br>
+        <button onclick="selectpet('Hase')">Hase</button>
+
+    </div>
+</body>
+</html>
