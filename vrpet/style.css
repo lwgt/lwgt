@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(201, 201, 174);
+}
+
 .inhalt {
     padding: 0;
     margin: 0;
@@ -16,6 +20,7 @@
     font-size: 25px;
     background-color: rgb(255, 214, 80);
     border: 10px;
+    border-radius: 5px;
 }
 .inhalt #small {
     font-size: 10px;
@@ -38,19 +43,59 @@
 .inhalt .katze {
     width: 5%;
     height: auto;
+    border-radius: 5px;
 }
 
 .inhalt .hase {
     width: 5%;
     height: auto;
+    border-radius: 5px;
 }
 
 .inhalt .welpe {
     width: 5%;
     height: auto;
+    border-radius: 5px;
 }
 
 .inhalt .meerschweinchen {
     width: 5%;
     height: auto;
+    border-radius: 5px;
+}
+
+
+.sidebar p {
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    padding: 3px;
+}
+nav {
+    position: fixed;
+}
+nav.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #151f3dd8;
+  padding: 20px;
+}
+
+nav.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav.sidebar ul li {
+  margin: 15px 0;
+}
+
+nav.sidebar ul li a {
+    color:rgb(10, 174, 10);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+nav.sidebar ul li a:hover {
+    color:aquamarine !important;
+    text-decoration: none;
 }
