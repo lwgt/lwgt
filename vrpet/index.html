@@ -16,7 +16,18 @@
         <h1 class="vrpet">VR Pet</h1>
         <p>VR Pet ist ein Haustier Simulator mit Vier verschiedenen Tieren. <br>
             Das Ziel des Spiels ist es, dass deine Tiere Glücklich sind. <br> </p>
-        <button onclick="window.location.href='selectpet.html'" id="play">🐶🐱🐹🐰Spielen🐶🐱🐹🐰</button>
+        <button onclick="startGame()" id="play">🐶🐱🐹🐰Spielen🐶🐱🐹🐰</button>
+        <script>
+            function startGame() {
+            if (localStorage.getItem("alreadyPlayed") === null) {
+                localStorage.setItem("alreadyPlayed", "true")
+                window.location.href='selectpet.html'
+            }
+            else {
+                window.location.href='play.html'
+            }
+            }
+        </script>
     </div>
 </body>
 </html>

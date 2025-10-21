@@ -8,25 +8,59 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
-        .inhalt .katze {
+.inhalt .katze {
+    transition: all 250ms;
     width: 10%;
+    height: auto;
+    position: static;
+    margin-top : 20px;
+}
+
+.inhalt .katze:hover {
+    transition: all 250ms;
+    width: 12%;
     height: auto;
 }
 
 .inhalt .hase {
+    transition: all 250ms;
     width: 10%;
+    height: auto;
+    position: static;
+}
+
+.inhalt .hase:hover {
+    width: 12%;
     height: auto;
 }
 
+
 .inhalt .welpe {
+    transition: all 250ms;
     width: 10%;
+    height: auto;
+    position: static;
+}
+
+.inhalt .welpe:hover {
+    transition: all 250ms;
+    width: 12%;
     height: auto;
 }
 
 .inhalt .meerschweinchen {
+    transition: all 250ms;
     width: 10%;
     height: auto;
+    position: static;
 }
+
+.inhalt .meerschweinchen:hover {
+    transition: all 250ms;
+    width: 12%;
+    height: auto;
+}
+
 .inhalt button {
     transition: all 250ms;
     margin: 10px;
@@ -56,9 +90,14 @@
     <div class="inhalt">
 
         <script>
-
+            if (localStorage.getItem("alreadyPlayed") === "true") {
+                window.location.href='play.html'
+            }
         function selectpet(currentPet) {
             window.location.href='play.html'
+            localStorage.setItem("pet1", currentPet);
+            const pet1 = "currentPet"
+            console.log("Du hast Katze ausgewählt")
         }
 
         </script>
@@ -68,19 +107,19 @@
         </p>
         <p id="small">(Man kann später auch neue Tiere kaufen) <br> </p>
         
-        <img class="katze" src="Katze.png" alt="">
+        <img onclick="selectpet('Katze')" class="katze" src="Katze.png" alt="">
         <br>
         <button onclick="selectpet('Katze')">Katze</button>
         <br>
-        <img class="meerschweinchen" src="Meerschweinchen.png" alt="">
+        <img onclick="selectpet('Meerschweinchen')" class="meerschweinchen" src="Meerschweinchen.png" alt="">
         <br>
-        <button onclick="selectpet('Meerschweinchen')">Meerschweinchen</button>
+        <button  onclick="selectpet('Meerschweinchen')">Meerschweinchen</button>
         <br>
-        <img class="welpe" src="Welpe.png" alt="">
+        <img onclick="selectpet('Welpe')" class="welpe" src="Welpe.png" alt="">
         <br>
-        <button onclick="selectpet('Katze')">Welpe</button>
+        <button onclick="selectpet('Welpe')">Welpe</button>
         <br>
-        <img class="hase" src="Hase.png" alt="">
+        <img onclick="selectpet('Hase')" class="hase" src="Hase.png" alt="">
         <br>
         <button onclick="selectpet('Hase')">Hase</button>
 

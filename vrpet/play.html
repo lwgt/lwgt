@@ -6,8 +6,100 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://lwgt.github.io/lwgt/css.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        .inhalt img {
+            border-radius: 7px;
+        }
+        .inhalt button {
+            background-color: rgb(49, 168, 223);
+            border: 0;
+            border-radius: 4px;
+            font-size: 198%;
+            /* font-size: 30px; */
+            transition: all 250ms;
+            margin: 10px;
+        }
+        .inhalt button:hover {
+            background-color:rgb(90, 230, 255);
+            border: 0;
+            border-radius: 4px;
+            /* font-size: 36px; */
+            font-size: 237.6%;
+        }
+        .inhalt button:active {
+            background-color:rgb(90, 255, 140);
+            border: 0;
+            border-radius: 4px;
+            font-size: 230%;
+        }
+        .inhalt #feelings {
+            font-size: 35px;
+        }
+        #nav {
+            background-color: rgb(153, 153, 129);
+            width: 225px;
+            height: 919px;
+            position: absolute;
+        }
+        #nav li {
+            font-size: 30px;
+            margin: 15px;
+            text-decoration: none;
+        }
+        #nav li:hover {
+            cursor: pointer;
+            font-size: 30px;
+            margin: 15px;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="nav">
+        <ul>
+            <li onclick="play()">
+                Home
+            </li>
+            <li onclick="farm()">
+                Farm
+            </li>
+            <li onclick="Shop()">
+                Shop
+            </li>
+        </ul>
+    </div>
+    <!-- --------------------------------------------inhalt-------------------------------------- -->
+    <div class="inhalt">
+        <!-- ----------------------------bild div------------------------------------- -->
+        <div id="bilderpets">
+        <!-- <img width="15%" src="Katze.png" alt=""> -->
+        </div>
+        <!-- -----------------------------------code------------------------------------- -->
+        <p id="feelings"></p>
+        <button>Füttern</button>
+        <br>
+        <button>Streicheln</button>
+
+
+    </div>
+    <!-- -----------------------------------------script----------------------------------------- -->
+        <script>
+        const  pet1 = localStorage.getItem("pet1")
+        console.log(pet1)
+        if (pet1 === "Katze") {document.getElementById("bilderpets").innerHTML += `<img width="15%" src="Katze.png" alt="">`; }
+        else {
+            if (pet1 === "Hase") {document.getElementById("bilderpets").innerHTML += `<img width="15%" src="Hase.png" alt="">`; }
+            else {
+                if (pet1 === "Welpe") {document.getElementById("bilderpets").innerHTML += `<img width="15%" src="Welpe.png" alt="">`; }
+                else {
+                    if (pet1 === "Meerschweinchen") {document.getElementById("bilderpets").innerHTML += `<img width="15%" src="Meerschweinchen.png" alt="">`; }
+                }
+            }
+        }
+    </script>
+    <script src="play.js"></script>
 </body>
 </html>
