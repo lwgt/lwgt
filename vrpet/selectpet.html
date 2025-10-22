@@ -80,7 +80,10 @@
     </style>
     <script>
 
-        function selectpet(currentPet) {
+        if (localStorage.getItem("pet1") === null) {
+
+        }
+        else {
             window.location.href='play.html'
         }
 
@@ -90,14 +93,11 @@
     <div class="inhalt">
 
         <script>
-            if (localStorage.getItem("alreadyPlayed") === "true") {
-                window.location.href='play.html'
-            }
         function selectpet(currentPet) {
-            window.location.href='play.html'
             localStorage.setItem("pet1", currentPet);
             const pet1 = "currentPet"
             console.log("Du hast Katze ausgewählt")
+            window.location.href='play.html'
         }
 
         </script>

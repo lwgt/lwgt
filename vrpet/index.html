@@ -18,6 +18,7 @@
             Das Ziel des Spiels ist es, dass deine Tiere Glücklich sind. <br> </p>
         <button onclick="startGame()" id="play">🐶🐱🐹🐰Spielen🐶🐱🐹🐰</button>
         <script>
+            // localStorage.clear()
             function startGame() {
             if (localStorage.getItem("alreadyPlayed") === null) {
                 localStorage.setItem("alreadyPlayed", "true")
