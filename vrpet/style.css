@@ -34,7 +34,7 @@ body {
 
 .inhalt #play:active {
     transition: all 0ms;
-    font-size: 25px;
+    font-size: 30px;
     background-color: rgb(112, 255, 80);
     border: 10px;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feld</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://lwgt.github.io/lwgt/css.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="funcs.js">
+
+    </script>
+    <style>
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(201, 201, 174);
+ }
+.inhalt {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    text-align: start;
+}
+.farmBilder {
+    display: grid;
+    grid-template-columns: repeat(4, 128px); 
+    grid-template-rows: repeat(2, 128px);    
+    gap: 0;
+    line-height: 0;
+    width: 512px;
+    margin: 20px;
+    margin-left: 40%;
+}
+
+.farmBilder img {
+    width: 128px;
+    height:128px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    image-rendering: pixelated;  
+    image-rendering: crisp-edges;
+}
+    </style>
+</head>
+<body>
+        <div id="nav">
+        <ul>
+            <li onclick="play()">
+                Home
+            </li>
+            <li onclick="farm()">
+                Farm
+            </li>
+            <li onclick="Shop()">
+                Shop
+            </li>
+        </ul>
+    </div>
+    <div class="inhalt">
+        <h1>Farm</h1>
+    </div>
+    <div class="farmBilder">
+        <img src="farm/11.png" alt="">
+        <img src="farm/12.png" alt="">
+        <img src="farm/13.png" alt="">
+        <img src="farm/14.png" alt="">
+        <img src="farm/21.png" alt="">
+        <img src="farm/22.png" alt="">
+        <img src="farm/23.png" alt="">
+        <img src="farm/24.png" alt="">
+    </div>
+</body>
+</html>

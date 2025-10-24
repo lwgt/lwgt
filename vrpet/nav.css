@@ -1,0 +1,25 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #nav {
+
+
+            background-color: rgb(153, 153, 129);
+            width: 10%;
+            height: 100%;
+            position: fixed;
+            border-radius: 6px;
+        }
+        #nav li {
+            font-size: 30px;
+            margin: 15px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        #nav li:hover {
+            cursor: pointer;
+            font-size: 30px;
+            margin: 15px;
+            text-decoration: underline;
+        }
