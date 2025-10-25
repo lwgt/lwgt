@@ -10,6 +10,12 @@ function randomNumber(min, max) {
   console.log(randomNum / 60 / 1000)
   return randomNum / 60
 }
+// function updateResources() {
+//     document.getElementById("carrots").innerHTML = localStorage.getItem("carrots")
+//     document.getElementById("meats").innerHTML = localStorage.getItem("meats")
+//     document.getElementById("nuts").innerHTML = localStorage.getItem("nuts")
+//     document.getElementById("mice").innerHTML = localStorage.getItem("mice")
+// }
 function petIsHappy() {
     document.getElementById("feelings").innerHTML = "Dein Pet ist Glücklich!"
 }

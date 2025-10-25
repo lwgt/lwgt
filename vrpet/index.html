@@ -24,6 +24,10 @@
             if (localStorage.getItem("alreadyPlayed") === null) {
                 localStorage.setItem("alreadyPlayed", "true")
                 window.location.href='selectpet.html'
+                localStorage.setItem("carrots", "0")
+                localStorage.setItem("nuts", "0")
+                localStorage.setItem("meat", "0")
+                localStorage.setItem("money", "20")
             }
             else {
                 window.location.href='play.html'
