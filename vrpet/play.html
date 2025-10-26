@@ -25,7 +25,7 @@
             background-color: rgb(49, 168, 223);
             border: 0;
             border-radius: 4px;
-            font-size: 198%;
+            font-size: 30px;
             /* font-size: 30px; */
             transition: all 250ms;
             margin: 10px;
@@ -35,7 +35,7 @@
             border: 0;
             border-radius: 4px;
             /* font-size: 36px; */
-            font-size: 237.6%;
+            font-size: 35px;
         }
         .inhalt button:active {
             background-color:rgb(90, 255, 140);
@@ -57,7 +57,7 @@
             <li onclick="farm()">
                 Farm
             </li>
-            <li onclick="Shop()">
+            <li onclick="shop()">
                 Shop
             </li>
         </ul>
@@ -66,6 +66,7 @@
     <p class="resources" id="money">💶Geld💶</p>
     <p class="resources" id="mice">🐭Mäuse🐭</p>
     <p class="resources" id="nuts">🥜Nüsse🥜</p>
+    <p class="resources" id="meats">Fleisch</p>
     <!-- --------------------------------------------inhalt-------------------------------------- -->
     <div class="inhalt">
         <!-- ----------------------------bild div------------------------------------- -->
@@ -76,7 +77,7 @@
         <p id="feelings"></p>
         <button onclick="feed()">Füttern</button>
         <br>
-        <button>Streicheln</button>
+        <button onclick="stroke()">Streicheln</button>
 
 
     </div>

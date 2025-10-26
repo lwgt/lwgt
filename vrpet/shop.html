@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://lwgt.github.io/lwgt/css.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="funcs.js"></script>
+    <script src="https://lwgt.github.io/lwgt/js.js"></script>
+    <style>
+        hr {
+            margin: 10px;
+            border: none;
+            height: 2px;
+            background-color: black;
+        }
+        #big {
+            font-size: 40px;
+        }
+        #small {
+            font-size: 15px;
+        }
+        button {
+            transition: all 250ms;
+            border: 0px;
+            border-radius: 5px;
+            font-size: 25px;
+            background-color: cornflowerblue;
+            margin: 10px;
+            padding: 2px;
+            position: relative;
+        }
+        button:hover {
+            font-size: 30px;
+            margin: 7.5px;
+
+        }
+    </style>
+</head>
+<body>
+        <div id="nav">
+        <ul>
+            <li onclick="play()">
+                Home
+            </li>
+            <li onclick="farm()">
+                Farm
+            </li>
+            <li onclick="shop()">
+                Shop
+            </li>
+        </ul>
+    </div>
+    <div class="inhalt">
+        <h1 id="big">Shop</h1>
+        <hr>
+        <h1>Resourcen</h1>
+        <button onclick="buy('carrots')">🥕Karotte🥕</button>
+        <br>
+        <button>🥜Nüsse🥜</button>
+        <br>
+        <button>🐭Mäuse🐭</button>
+        <br>
+        <p id="small">(Nicht lebendig)</p>
+        <br>
+    </div>
+</body>
+</html>
