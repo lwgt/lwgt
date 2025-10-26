@@ -15,10 +15,13 @@ function updateResources() {
     document.getElementById("money").innerHTML = localStorage.getItem("money") + "💶"
 }
 function buy(article) {
-    let howMany = localStorage.getItem(article)
+    let howMany = parseInt(localStorage.getItem(article))
     console.log(howMany)
-    if (localStorage.getItem("money")> 0) {
+    if (parseInt(localStorage.getItem("money"))> 0) {
         localStorage.setItem(article, howMany + 1)
-        localStorage.setItem("money", localStorage.getItem("money") - 5)
+        localStorage.setItem("money", parseInt(localStorage.getItem("money")) - 5)
     }
+}
+function zurücksetzen() {
+    window.location.href='zurücksetzen.html'
 }
