@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <script src="funcs.js"></script>
-    <script src="https://lwgt.github.io/lwgt/js.js"></script>
+    <script src="https://lwgt.github.io/lwgt/js.js">updateResources()</script>
+    <script>
+    </script>
     <style>
         hr {
             margin: 10px;
@@ -36,6 +38,15 @@
             font-size: 30px;
             margin: 7.5px;
 
+        }
+        button:active {
+            font-size: 30px;
+            margin: 7.5px;
+            background-color: rgb(121, 168, 255);
+        }
+        .resources {
+            text-align: right;
+            position: relative;
         }
     </style>
 </head>
@@ -66,5 +77,10 @@
         <p id="small">(Nicht lebendig)</p>
         <br>
     </div>
+            <p class="resources" id="carrots">🥕Karotten🥕</p>
+        <p class="resources" id="money">💶Geld💶</p>
+        <p class="resources" id="mice">🐭Mäuse🐭</p>
+        <p class="resources" id="nuts">🥜Nüsse🥜</p>
+        <p class="resources" id="meats">Fleisch</p>
 </body>
 </html>

@@ -21,6 +21,7 @@ function buy(article) {
         localStorage.setItem(article, howMany + 1)
         localStorage.setItem("money", parseInt(localStorage.getItem("money")) - 5)
     }
+    updateResources()
 }
 function zurücksetzen() {
     window.location.href='zurücksetzen.html'
