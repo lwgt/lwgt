@@ -11,37 +11,17 @@
         
     </script>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .farmBilder {
+            padding: 0;
+            margin: 0px;
+            width: 100px;
+            height: auto;
+        }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(201, 201, 174);
- }
-.inhalt {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 20px;
-    text-align: start;
-}
-.farmBilder {
-    display: grid;
-    grid-template-columns: repeat(4, 128px); 
-    grid-template-rows: repeat(2, 128px);    
-    gap: 0;
-    line-height: 0;
-    width: 512px;
-    margin: 20px;
-    margin-left: 40%;
-}
-
-.farmBilder img {
-    width: 128px;
-    height:128px;
-    display: block;
-    margin: 0;
-    padding: 0;
-    image-rendering: pixelated;  
-    image-rendering: crisp-edges;
-}
     </style>
 </head>
 <body>
@@ -62,6 +42,7 @@ body {
         <h1>Farm</h1>
     </div>
     <div class="farmBilder">
+        <div id="farmImages">
         <img src="farm/11.png" alt="">
         <img src="farm/12.png" alt="">
         <img src="farm/13.png" alt="">
@@ -70,6 +51,7 @@ body {
         <img src="farm/22.png" alt="">
         <img src="farm/23.png" alt="">
         <img src="farm/24.png" alt="">
+        </div>
     </div>
 </body>
 </html>

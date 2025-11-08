@@ -16,6 +16,7 @@
             margin: 15px;
             padding: 10px;
             text-decoration: none;
+            list-style: none;
         }
         #nav li:hover {
             cursor: pointer;
